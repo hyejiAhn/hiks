@@ -1,0 +1,55 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+html,body{font-family: "Ubuntu", sans-serif; color: #666;}
+
+.header{height: 120px;display: flex; flex-direction: column;align-items: flex-end; }
+.wrap{width: 1200px;margin: 0 auto; }
+.gnb{display: flex;height: 50px;}
+.gnb>li{line-height: 50px; color: #999;}
+.gnb>li>a{display: block;padding: 0 10px; font-size: 12px;}
+.nav{display: flex; width: 100%;height: 70px; justify-content: space-between; align-items: center;}
+.logo{ font-size: 24px; font-weight: bold;letter-spacing: 2px;}
+.menu{display: flex; align-self: flex-end; text-align: center;}
+.menu>li{line-height: 40px; }
+.menu>li>a{display: block; line-height: 30px ; padding: 0 25px; font-weight: bold;transition: all 0.3s;}
+.sub{background-color: #eee; font-size: 13px; position: absolute; width: 118px; height: 160px; z-index: 100; align-items: center; }
+.sub a{display: block;}
+
+.sub a:hover{background-color: rgb(192, 188, 192); color: #fff;}
+.menu>li>a:hover{background-color: #666; color: #fff;}
+
+.main{height: calc(100vh - 400px); background-color: #000;position: relative;}
+.main>img{display: block;width: 100%; height: 100%;opacity: 0.4;object-fit: cover;}
+.main_title{position: absolute;width: 1200px;left: 0; right: 0;margin: 0 auto; top: 30%;}
+.main_title>p:nth-child(1){font-size: 60px; color: #fff;}
+.main_title>p:nth-child(2){ color: #fff; font-size: 14px;}
+.main_title>a{display: block; width: 400px;border: 1px solid #fff;line-height: 50px;text-align: center; color: #fff;font-size: 20px; margin-top: 50px;transition: all 0.3s; font-weight: bold;}
+.main_title>a:hover{background-color: #fff; color: #333; letter-spacing: 2px;}
+.btns{width: 200px; height: 200px; display: flex; margin-top: 20px; margin-right: 60px; position: fixed; right: 50px; top: 170px;}
+.btn{width: 200; height: 200px; margin: 10px auto; align-items: center;}
+.btn>li{text-align: center; display: block; font-size: 25px; line-height: 40px; padding: 20px;}
+.btn>li:nth-child(1){background-color: #663366; color: #fff;}
+.btn>li:nth-child(2){background-color: #ff3333; color: #fff;}
+.btn>li:nth-child(3){background-color: #cc6600; color: #fff;}
+.btn>li:nth-child(4){background-color: #333399; color: #fff;}
+.btn>li:hover{font-weight: bold;}
+
+.contents{ padding: 20px 0;}
+.con_title{text-align: center; font-size: 24px; font-weight: bold; margin-top:40px; margin-bottom: 30px;}
+.con_notice{display: flex; justify-content: center;}
+.con_notice>li{width: 120px; background-color: #999; border-radius: 40px; margin-top: 10px; height: 40px; margin-right: 20px;text-align: center; color: #fff;padding: 7PX; box-sizing: border-box;}
+.con_notice>li>a{font-size: 20px;}
+.con_list{display: flex;justify-content: space-between;}
+.con_list>li{width: 228px; overflow: hidden;}
+.con_list>li img{width: 100%; height: 280px;}
+.con_list>li a{display: block;line-height: 30px; font-weight: bold;}
+.con_list>li p{font-size: 13px; color: #999;}
+
+.footer{background-color: #333; color: #999;padding: 100px 0;}
+.f_top{justify-content: space-between; display: flex; height: 50px; border-bottom: 1px solid white;}
+.f_logo{font-size: 24px; color: #fff; letter-spacing: 1px;font-family: "Song Myung", serif;}
+.f_menu{font-size: 14px; display: flex; color: #fff;}
+.f_menu>li>a{padding: 5px 15px; display: block;}
+.f_sns{font-size: 16px; display: flex; color: #fff;;}
+.f_sns>li>a{padding: 4px 5px; display: block;}
+.copy{font-size: 12px; line-height: 180%; color: #fff; padding-top: 20px;}
